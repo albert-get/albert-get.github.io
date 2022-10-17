@@ -37,7 +37,56 @@ const Layout:FC<Props> = (props) => {
     let [drawerV,setDrawerV]=useState(false)
     const theme = useTheme();
     const matches = useMediaQuery(theme.breakpoints.up('sm'));
-    if(matches){
+    if(!matches){
+        return (
+            <ThemeProvider theme={customT}>
+            <Box>
+                <Global
+                    styles={{
+                        body: {
+                        margin: 0,
+                        padding: 0
+                        }
+                    }}
+                />
+                <AppBar position="sticky">
+                        <Container maxWidth={false}>
+                            <Toolbar disableGutters>
+                            <IconButton
+                                color="inherit"
+                                aria-label="open drawer"
+                                edge="start"
+                                onClick={()=>setDrawerV(!drawerV)}
+                            >
+                                <MenuIcon />
+                            </IconButton>
+                            <Box sx={{flexGrow:1}}/>
+                            <Typography variant="h6" component="div">
+                                BLOG
+                            </Typography>
+                            </Toolbar>
+                        </Container>
+                    </AppBar>
+                    <Box>{props.children}</Box>
+                    <Drawer
+                    anchor='left'
+                    open={drawerV}
+                    onClose={()=>setDrawerV(false)}
+                    >
+                        <Box sx={{width:'60vw'}}>
+                        <MenuList >
+                            <MenuItem>
+                            <ListItemText>
+                                test
+                            </ListItemText>
+                            </MenuItem>
+                        </MenuList>
+                        </Box>
+                    </Drawer>
+            </Box>
+            </ThemeProvider>
+            )
+    }
         return (
         <ThemeProvider theme={customT}>
         <Box>
@@ -74,56 +123,6 @@ const Layout:FC<Props> = (props) => {
         </Box>
         </ThemeProvider>
         )
-    }
-    
-    return (
-    <ThemeProvider theme={customT}>
-    <Box>
-        <Global
-            styles={{
-                body: {
-                margin: 0,
-                padding: 0
-                }
-            }}
-        />
-        <AppBar position="sticky">
-                <Container maxWidth={false}>
-                    <Toolbar disableGutters>
-                    <IconButton
-                        color="inherit"
-                        aria-label="open drawer"
-                        edge="start"
-                        onClick={()=>setDrawerV(!drawerV)}
-                    >
-                        <MenuIcon />
-                    </IconButton>
-                    <Box sx={{flexGrow:1}}/>
-                    <Typography variant="h6" component="div">
-                        BLOG
-                    </Typography>
-                    </Toolbar>
-                </Container>
-            </AppBar>
-            <Box>{props.children}</Box>
-            <Drawer
-            anchor='left'
-            open={drawerV}
-            onClose={()=>setDrawerV(false)}
-            >
-                <Box sx={{width:'60vw'}}>
-                <MenuList >
-                    <MenuItem>
-                    <ListItemText>
-                        test
-                    </ListItemText>
-                    </MenuItem>
-                </MenuList>
-                </Box>
-            </Drawer>
-    </Box>
-    </ThemeProvider>
-    )
   }
   
   export default Layout
