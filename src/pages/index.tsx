@@ -12,4 +12,4 @@ const IndexPage = () => {
 
 export default IndexPage
 
-export const Head: HeadFC = () => <title>lenchif</title>
+export const Head: HeadFC = () => <title>lenchif's blog</title>

@@ -1,0 +1,28 @@
+import LayoutW from "../components/Layout"
+
+---
+title: 今天，来盘webrtc
+---
+stun服务器
+ sdp 协商媒体传输格式
+ condidate 协商外网映射端口
+turn服务器
+ 在端和端无法直接传输时，通过turn服务器转发
+信令服务器
+  管理房间
+
+
+coturn软件可以本地搭建stun和turn服务器
+brew search coturn
+
+
+
+export const Head = () => <title>webrtc</title>
+
+export default function Layout({children}) {
+    return (
+    <LayoutW>
+        {children}
+    </LayoutW>
+    );
+}

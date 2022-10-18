@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ec242a18-a169-45fc-8c9e-46797fad6804" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pages/webrtc-demo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/404/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/app-b8a5c789f21f10507356.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/app-b8a5c789f21f10507356.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/chunk-map.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/component---src-pages-404-tsx-11a606cf4c5bb2614b57.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/component---src-pages-404-tsx-11a606cf4c5bb2614b57.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/component---src-pages-index-tsx-609b8c316dae38d477fe.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/component---src-pages-index-tsx-609b8c316dae38d477fe.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/component---src-pages-index-tsx-609b8c316dae38d477fe.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/component---src-pages-test-mdx-cf768de5793ff95fee8c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/component---src-pages-test-mdx-cf768de5793ff95fee8c.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/favicon-32x32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/framework-a2d288ec56adbffd6dba.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/framework-a2d288ec56adbffd6dba.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/framework-a2d288ec56adbffd6dba.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/icons/icon-144x144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/icons/icon-192x192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/icons/icon-256x256.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/icons/icon-384x384.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/icons/icon-48x48.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/icons/icon-512x512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/icons/icon-72x72.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/icons/icon-96x96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/manifest.webmanifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/page-data/404.html/page-data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/page-data/404/page-data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/page-data/app-data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/page-data/index/page-data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/page-data/test/page-data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/polyfill-aa4692331c0a6f85cb9f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/polyfill-aa4692331c0a6f85cb9f.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/webpack-runtime-2091a6a9eb47302e63c3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/webpack-runtime-2091a6a9eb47302e63c3.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/webpack.stats.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/~partytown/debug/partytown-atomics.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/~partytown/debug/partytown-media.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/~partytown/debug/partytown-sandbox-sw.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/~partytown/debug/partytown-sw.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/~partytown/debug/partytown-ww-atomics.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/~partytown/debug/partytown-ww-sw.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/~partytown/debug/partytown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/~partytown/partytown-atomics.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/~partytown/partytown-media.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/~partytown/partytown-sw.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/~partytown/partytown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/test.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/webrtc.mdx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2GGT01YkXLKJ1Dx4nkzyxrrviF1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/harry/harry/workspace/dem/blog/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ec242a18-a169-45fc-8c9e-46797fad6804" name="Changes" comment="" />
+      <created>1666013694879</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666013694879</updated>
+      <workItem from="1666013697699" duration="167000" />
+      <workItem from="1666045977231" duration="19465000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

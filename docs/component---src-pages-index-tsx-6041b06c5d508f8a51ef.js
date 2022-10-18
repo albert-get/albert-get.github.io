@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkblog=self.webpackChunkblog||[]).push([[691],{7200:function(e,l,n){n.r(l),n.d(l,{Head:function(){return r}});var t=n(7294),u=n(5352);l.default=function(){return t.createElement(u.Z,null,t.createElement("div",null,"lllll"))};var r=function(){return t.createElement("title",null,"lenchif's blog")}}}]);
+//# sourceMappingURL=component---src-pages-index-tsx-6041b06c5d508f8a51ef.js.map

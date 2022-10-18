@@ -2,7 +2,7 @@ import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `blog`,
+    title: `lenchif's blog`,
     siteUrl: `https://albert-get.github.io/`
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
@@ -12,7 +12,9 @@ const config: GatsbyConfig = {
   plugins: [{
     resolve: 'gatsby-plugin-manifest',
     options: {
-      "icon": "src/images/icon.png"
+      "icon": "src/images/icon.png",
+      "name":"lenchif's blog",
+      "short_name":"lenchif's blog"
     }
   }, "gatsby-plugin-mdx", {
     resolve: 'gatsby-source-filesystem',
