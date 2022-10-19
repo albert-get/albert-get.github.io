@@ -16,9 +16,12 @@ import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import IconButton from '@mui/material/IconButton';
 import Drawer from '@mui/material/Drawer';
+import routes from '../config/routes'
+import { navigate } from 'gatsby';
 
 type Props = {
-    children: ReactNode
+    children: ReactNode,
+    location?:{pathname:string}
 }
 const customT = createTheme({
     palette: {
@@ -34,6 +37,7 @@ const customT = createTheme({
     },
 });
 const Layout: FC<Props> = (props) => {
+    let [selected,setSelected]=useState('')
     let [drawerV, setDrawerV] = useState(false)
     const theme = useTheme();
     let [widthEnough, setWidthEnough] = useState(true);
@@ -44,7 +48,14 @@ const Layout: FC<Props> = (props) => {
         } else {
             setWidthEnough(false)
         }
+        if(props.location){
+            setSelected(props.location.pathname)
+        }
     })
+    function itemClick(item:{path:string}){
+        navigate(item.path)
+        setSelected(item.path)
+    }
 
     if (widthEnough) {
         return (
@@ -71,11 +82,15 @@ const Layout: FC<Props> = (props) => {
                     <Stack direction="row">
                         <Box sx={{width: '300px'}}>
                             <MenuList>
-                                <MenuItem>
-                                    <ListItemText>
-                                        test
-                                    </ListItemText>
-                                </MenuItem>
+                                {routes.map((item)=>{
+                                    return (
+                                        <MenuItem key={item.path} onClick={()=>itemClick(item)} selected={selected===item.path}>
+                                            <ListItemText>
+                                                {item.name}
+                                            </ListItemText>
+                                        </MenuItem>
+                                    )
+                                })}
                             </MenuList>
                         </Box>
                         <Box sx={{flexGrow:1}}>{props.children}</Box>
@@ -122,11 +137,15 @@ const Layout: FC<Props> = (props) => {
                 >
                     <Box sx={{width: '60vw'}}>
                         <MenuList>
-                            <MenuItem>
-                                <ListItemText>
-                                    test
-                                </ListItemText>
-                            </MenuItem>
+                        {routes.map((item)=>{
+                            return (
+                                <MenuItem key={item.path}>
+                                    <ListItemText>
+                                        {item.name}
+                                    </ListItemText>
+                                </MenuItem>
+                            )
+                        })}
                         </MenuList>
                     </Box>
                 </Drawer>
