@@ -13,8 +13,6 @@ const config: GatsbyConfig = {
     resolve: 'gatsby-plugin-manifest',
     options: {
       "icon": "src/images/icon.png",
-      "name":"lenchif's blog",
-      "short_name":"lenchif's blog"
     }
   }, "gatsby-plugin-mdx", {
     resolve: 'gatsby-source-filesystem',
