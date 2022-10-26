@@ -139,7 +139,7 @@ const Layout: FC<Props> = (props) => {
                         <MenuList>
                         {routes.map((item)=>{
                             return (
-                                <MenuItem key={item.path}>
+                                <MenuItem key={item.path} onClick={()=>itemClick(item)} selected={selected===item.path}>
                                     <ListItemText>
                                         {item.name}
                                     </ListItemText>
