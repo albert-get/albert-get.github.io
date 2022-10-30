@@ -1,8 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit'
 import postReducer from './test'
+import {posts} from './storeEnum'
 export const store = configureStore({
     reducer:{
-        posts:postReducer
+        [posts]:postReducer
     }
 })
 

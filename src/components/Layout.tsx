@@ -49,7 +49,11 @@ const Layout: FC<Props> = (props) => {
             setWidthEnough(false)
         }
         if(props.location){
-            setSelected(props.location.pathname)
+            if(props.location.pathname.endsWith('/')){
+                setSelected(props.location.pathname)
+            }else{
+                setSelected(`${props.location.pathname}/`)
+            }
         }
     })
     function itemClick(item:{path:string}){

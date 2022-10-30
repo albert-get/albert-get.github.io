@@ -1,15 +1,16 @@
 import React from "react"
-import Layout from "../../components/Layout"
+// import Layout from "../../components/Layout"
 import { useSelector, /*useDispatch*/ } from 'react-redux';
 // import {setPost, incrementAsync} from '../../store/test'
+import { posts } from "../../store/storeEnum";
 
 
 const IndexPage = () => {
-    const post = useSelector((state)=>state.posts)
+    const post = useSelector((state)=>state[posts])
     // const dispatch = useDispatch();
     console.log(post)
   return (
-    <Layout>
+    <>
       {/*<div onClick={()=>{*/}
       {/*    // dispatch(setPost([1,2]))*/}
       {/*    dispatch(incrementAsync())*/}
@@ -17,7 +18,7 @@ const IndexPage = () => {
         <div>{post.map((v)=>{
             return <div key={v}>{v}</div>
         })}</div>
-    </Layout>
+    </>
   )
 }
 

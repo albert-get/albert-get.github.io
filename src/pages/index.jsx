@@ -11,7 +11,7 @@ const IndexPage = () => {
   )
 }
 
-export const Head = ({pageContext}) => <title>{pageContext.title}</title>
+
 
 export default IndexPage
 

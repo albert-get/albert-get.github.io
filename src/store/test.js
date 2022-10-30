@@ -1,8 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit'
+import {posts} from './storeEnum'
 
 const postsSlice = createSlice({
-    name: 'posts',
-    initialState: [],
+    name: posts,
+    initialState: [1,2],
     reducers: {
         setPost(state, action) {
             return action.payload
