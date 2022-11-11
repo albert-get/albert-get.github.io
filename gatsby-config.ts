@@ -1,10 +1,5 @@
-import type { GatsbyConfig } from "gatsby";
 
-const config: GatsbyConfig = {
-  siteMetadata: {
-    title: `lenchif's blog`,
-    siteUrl: `https://albert-get.github.io/`
-  },
+const config = {
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
   // Learn more at: https://gatsby.dev/graphql-typegen
@@ -26,7 +21,8 @@ const config: GatsbyConfig = {
     __key: "pages"
   },
   `gatsby-plugin-sass`,
-  'gatsby-plugin-postcss'
+  `gatsby-plugin-react-helmet`,
+  `gatsby-plugin-styled-components`,
 ]
 };
 

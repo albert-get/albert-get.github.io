@@ -1,0 +1,14 @@
+
+
+linux服务器都用docker安装服务
+
+之前对docker还不太了解，修改docker的安装路径用的是硬链接
+使得docker对var/lib/docker的修改都会作用到链接的目录下
+
+
+标准的做法还是修改docker的配置文件中daemon.json
+```
+{
+  "data-root": "/xx/docker"
+}
+```

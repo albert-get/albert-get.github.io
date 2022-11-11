@@ -1,16 +1,11 @@
 
-import LayoutW from "../../components/Layout"
+import Warp from "../../components/DocsLayout"
 import logo from '../../images/icon.png'
-import styled from 'styled-components';
-
-export const Wrapper = styled.div`
-  overflow:hidden;
-  width:calc(100vw - 300px);
-`;
-
+import styled from 'styled-components'
 
 # markdown语法简明
 
+极
 - 标题 # ## 
 - 列表
 - 引用
@@ -24,9 +19,7 @@ export const Wrapper = styled.div`
 
 
 <img src={logo}/>
-<Wrapper>
 ![这里写图片描述](https://s.cn.bing.net/th?id=OHR.FrankensteinFriday_ZH-CN5814917673_UHD.jpg&rf=LaDigue_UHD.jpg&w=3840&h=2160&c=8&rs=1&o=3&r=0)
-</Wrapper>
 
 - 分割线---
 ---
@@ -34,6 +27,9 @@ export const Wrapper = styled.div`
 ---
 
 - 代码块
+``` js
+llll
+```
 
 - 表格
 
@@ -56,8 +52,12 @@ mdx v2不再支持gfm
 
 export default function Layout({location,children}) {
     return (
-    <LayoutW location={location}>
+    <Warp location={location}>
         {children}
-    </LayoutW>
+    </Warp>
     );
+}
+
+export function Head (){
+  return <title>markdown</title>
 }

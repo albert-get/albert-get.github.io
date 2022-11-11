@@ -1,4 +1,4 @@
-import LayoutW from "../../components/Layout"
+import Warp from "../../components/DocsLayout"
 
 ---
 title: 今天，来盘webrtc
@@ -21,8 +21,8 @@ export const Head = () => <title>webrtc</title>
 
 export default function Layout({location,children}) {
     return (
-    <LayoutW location={location}>
+    <Warp location={location}>
         {children}
-    </LayoutW>
+    </Warp>
     );
 }

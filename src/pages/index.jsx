@@ -1,17 +1,17 @@
 import React from "react"
-import Layout from "../components/Layout"
-
+import siteMeta from "../config/siteMeta"
 
 const IndexPage = () => {
   return (
-    <Layout>
+    <>
       <div>welcome to my blog</div>
-
-    </Layout>
+    </>
   )
 }
 
-
+export function Head (){
+  return <title>{siteMeta.title}</title>
+}
 
 export default IndexPage
 

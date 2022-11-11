@@ -1,0 +1,53 @@
+spring cloud微服务提供了很多介入spring cloud的组件，非常方便，但是对于注册和配置中心支持得不好
+
+携程的apolo作为配置中心可以，但是没有注册中心的功能
+
+zookeeper是常用的注册中心
+
+spring cloud alibaba提供了一套完整开源的微服务解决方案
+其中dubbo socket seata 都脱离了alibaba开源了
+nacos是一个很好的配置中心，和alibaba的生态集成得很好，但是还是需要sentinel提供流量监控
+
+腾讯的北极星相对来讲就比较合适，有配置中心 注册中心，还有流量监控的能力，主要版本管理比阿里那一套要方便，当然做为微服务调用用dubbo应该
+很好，所以还是决定选用北极星
+
+``` xml
+<dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo-spring-boot-starter</artifactId>
+                <version>2.7.8</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.rocketmq</groupId>
+                <artifactId>rocketmq-spring-boot-starter</artifactId>
+                <version>2.2.2</version>
+            </dependency>
+            <dependency>
+                <groupId>io.seata</groupId>
+                <artifactId>seata-spring-boot-starter</artifactId>
+                <version>1.4.2</version>
+            </dependency>
+```
+
+
+8080腾讯北极星控制面板
+8091北极星服务发现
+
+console_port=8080
+
+
+polaris-server listen port info
+
+eureka_port=8761
+
+xdsv3_port=15010
+
+prometheus_sd_port=9000
+
+service_grpc_port=8091
+
+config_grpc_port=8093
+
+api_http_port=8090
+
+docker run -itd --name bjx -p 8080:8080 -p 8090:8090 -p 8091:8091 -p 8093:8093 polarismesh/polaris-server-standalone:latest
